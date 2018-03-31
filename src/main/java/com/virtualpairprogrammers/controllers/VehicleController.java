@@ -43,7 +43,7 @@ public class VehicleController
 		return "redirect:/website/vehicles/list.html";		
 	}
 
-	@RequestMapping(value="/list.html", method=RequestMethod.GET)	
+	@RequestMapping(value="/", method=RequestMethod.GET)
 	public ModelAndView vehicles()
 	{
 		List<Vehicle> allVehicles = data.findAll();
